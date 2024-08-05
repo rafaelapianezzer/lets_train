@@ -8,11 +8,11 @@ import './styles/index.scss'
 
 export const App = () => {
   const [workoutMinutes, setWorkoutMinutes] = useState(0);
-  const [workoutSeconds, setWorkoutSeconds] = useState(0);
+  const [workoutSeconds, setWorkoutSeconds] = useState(20);
   const [restMinutes, setRestMinutes] = useState(0);
-  const [restSeconds, setRestSeconds] = useState(0);
-  const [sets, setSets] = useState();
-  const [cycles, setCycles] = useState();
+  const [restSeconds, setRestSeconds] = useState(10);
+  const [sets, setSets] = useState(8);
+  const [cycles, setCycles] = useState(2);
   const [currentSet, setCurrentSet] = useState();
   const [currentCycle, setCurrentCycle] = useState();
   const [timeLeft, setTimeLeft] = useState(0);
