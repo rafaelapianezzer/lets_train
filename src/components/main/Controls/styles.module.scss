@@ -1,0 +1,30 @@
+.buttonsControl {
+    gap: 1rem; 
+    max-width: 500px;
+
+  
+
+ 
+  
+    @media (max-width: 576px) {
+      flex-direction: column; 
+
+     
+  }
+
+ 
+  }
+
+
+  .buttonsControl {
+    .customButton {
+      background-color: var(--color-primary);
+      color: var(--button-text-color);
+      border: 1px solid var(--button-border-color);
+  
+   
+    }
+  }
+
+
+
