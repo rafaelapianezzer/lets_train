@@ -1,18 +1,12 @@
-/* styles.module.scss */
 .customInput {
-    border: 1px solid  rgb(22, 39, 42); /* Cor da borda do input */
-  
-    
-    
-    &:focus {
-      border-color: var(--color-primary); /* Cor da borda ao focar */
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra ao focar */
-    }
+  border: 1px solid rgb(22, 39, 42);
+
+  &:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
+}
 
-  .formText {
-    color: var(--color-text);
-  }
-
-
-  
+.formText {
+  color: var(--color-text);
+}

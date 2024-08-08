@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { Timer } from './components/main/Timer';
 import { Controls } from './components/main/Controls';
 import { CustomModal } from './components/main/CustomModal';
-
 import './styles/index.scss'
 
 export const App = () => {
@@ -67,7 +66,6 @@ export const App = () => {
   };
 
   const handleStop = () => {
-    // Adicionar uma confirmação se necessário
     setIsRunning(false);
     setCurrentSet(0);
     setCurrentCycle(0);
@@ -85,7 +83,6 @@ export const App = () => {
   };
 
   const handleSaveSettings = () => {
-    // Adicionar lógica para salvar configurações se necessário
   };
 
   const handleInputChange = (setter, min, max) => (event) => {
@@ -109,13 +106,13 @@ export const App = () => {
           restMinutes={restMinutes}
           restSeconds={restSeconds}
         />
-        <Controls 
+        <Controls
           handlePlayPause={handlePlayPause}
           isRunning={isRunning}
           handleStop={handleStop}
           handleOpenSettings={handleOpenSettings}
         />
-        <CustomModal 
+        <CustomModal
           showSettings={showSettings}
           handleCloseSettings={handleCloseSettings}
           workoutMinutes={workoutMinutes}
@@ -132,7 +129,7 @@ export const App = () => {
           setSets={setSets}
           setCycles={setCycles}
           isRunning={isRunning}
-          onSave={handleSaveSettings} 
+          onSave={handleSaveSettings}
         />
       </main>
     </div>
