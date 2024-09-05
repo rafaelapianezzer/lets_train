@@ -28,7 +28,7 @@ export const Timer = ({ isWorkout, timeLeft, currentSet, sets, currentCycle, cyc
             text={`${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, '0')}`}
             styles={buildStyles({
               textColor: "LightSlateGray",
-              pathColor: isWorkout ? "Red" : "DeepSkyBlue",
+              pathColor: isWorkout ? "gold" : "gray",
               trailColor: "Snow",
             })}
           />
